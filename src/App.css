@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  background-color: rgb(162, 162, 162);
+  justify-content: center;
+  align-items: center;
+}
+
+.counter h1 {
+  font-size: 5rem;
+  color: white;
+  -webkit-text-stroke: 2px rgb( 50, 50, 50);
+}
+
+.counter-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 50px;
+  color: white;
+  border-width: 2px;
+}
+
+.change {
+  border-color: rgb(238, 150, 43);
+  background-color: rgb(69, 69, 69);
+}
+
+.reset {
+  border-color: rgb(236, 81, 81);
+  background-color: rgb(113, 8, 8);
+}
+
+.login {
+  border: 2px solid rgb(147, 206, 225);
+  background-color: azure;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login form {
+  display: flex;
+  gap: 10px;
+}
+
+.login input {
+  border-radius: 5px;
+}
+
+.login pre {
+  padding: 10px;
+  border: 1px solid purple;
+  background-color: rgb(235, 190, 198);
+}
+
+.login span {
+  color: rgb(161, 80, 161);
+}
+
+.card-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border: 2px solid rgb(193, 109, 177);
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.card {
+  list-style-type: none;
+}
+
+.card div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(190, 74, 161);
+  background-color: rgb(253, 211, 218);
+  box-shadow: 5px 5px 5px gray;
+}
+
+.card h3 {
+  text-wrap: nowrap;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.orange {
+  color: rgb(186, 77, 50);
+}
+
+.violet {
+  color: rgb(123, 47, 154);
+}
+
+.red {
+  color: red;
+}
+
+.card img {
+  border: 4px solid rgb(192, 129, 216);
+  width: 200px;
+  position: relative;
+}
+
+.location {
+  border: 2px solid red;
+  background-color: black;
+  color: white;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  align-items: center;
+  font-family: cursive;
+  padding: 20px;
+}
+
+.location div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.location button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  font-family: cursive;
+  position: relative;
+  padding: 10px 0;
+  width: 80%;
+  height: 80px;
+}
+
+.location button p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.location button::before {
+  content: "";
+  border: 5px solid rgb(113, 18, 18);
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.1s linear;
+}
+
+.location button:hover::before {
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+}
+
+.location img {
+  width: 90%;
+}
